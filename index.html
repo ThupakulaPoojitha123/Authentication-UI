@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Authentication UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-box">
+
+        <h2 class="title">Welcome</h2>
+
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+
+        <!-- Login -->
+        <form id="login" class="input-group">
+            <input type="email" id="loginEmail" class="input-field" placeholder="Email" required>
+            
+            <div class="password-box">
+                <input type="password" id="loginPassword" class="input-field" placeholder="Password" required>
+                <span onclick="togglePassword('loginPassword')">👁</span>
+            </div>
+
+            <div class="options">
+                <label><input type="checkbox" id="rememberMe"> Remember Me</label>
+            </div>
+
+            <p class="error" id="loginError"></p>
+
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+        <!-- Register -->
+        <form id="register" class="input-group">
+            <input type="text" id="fullName" class="input-field" placeholder="Full Name" required>
+            <input type="email" id="registerEmail" class="input-field" placeholder="Email" required>
+
+            <div class="password-box">
+                <input type="password" id="registerPassword" class="input-field" placeholder="Password" required>
+                <span onclick="togglePassword('registerPassword')">👁</span>
+            </div>
+
+            <div class="strength">
+                <div id="strengthBar"></div>
+            </div>
+
+            <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm Password" required>
+
+            <p class="error" id="registerError"></p>
+
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

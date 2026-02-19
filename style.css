@@ -1,0 +1,137 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(120deg,#7d8291,#20ce8e);
+}
+
+.container{
+    width:380px;
+    height:550px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+    overflow:hidden;
+    position:relative;
+}
+
+.form-box{
+    width:100%;
+    padding:40px;
+    position:relative;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.button-box{
+    width:220px;
+    margin:0 auto 30px;
+    position:relative;
+    border-radius:30px;
+    background:#eee;
+}
+
+.toggle-btn{
+    padding:10px 30px;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#btn{
+    position:absolute;
+    width:110px;
+    height:100%;
+    background:linear-gradient(135deg,#4e73df,#1cc88a);
+    border-radius:30px;
+    transition:.4s;
+}
+
+.input-group{
+    position:absolute;
+    width:280px;
+    transition:.4s;
+}
+
+.input-field{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-bottom:2px solid #ccc;
+    outline:none;
+}
+
+.password-box{
+    position:relative;
+}
+
+.password-box span{
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+}
+
+.options{
+    font-size:13px;
+    margin:10px 0;
+}
+
+.submit-btn{
+    width:100%;
+    padding:12px;
+    background:linear-gradient(135deg,#4e73df,#1cc88a);
+    border:none;
+    border-radius:25px;
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.error{
+    color:red;
+    font-size:12px;
+    height:15px;
+}
+
+.strength{
+    height:5px;
+    background:#ddd;
+    margin-bottom:10px;
+}
+
+#strengthBar{
+    height:5px;
+    width:0%;
+    transition:.3s;
+}
+
+#login{ left:50px; }
+#register{ left:450px; }
+
+@keyframes shake {
+    0%{transform:translateX(0);}
+    25%{transform:translateX(-5px);}
+    50%{transform:translateX(5px);}
+    75%{transform:translateX(-5px);}
+    100%{transform:translateX(0);}
+}
+
+.shake{
+    animation:shake .3s;
+}
